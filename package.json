@@ -1,22 +1,19 @@
 {
-  "name": "cypress4ccl_js",
+  "name": "cypress-with-cucumber",
   "version": "1.0.0",
-  "description": "cypress ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rizwanwasim/cypress4ccl_js.git"
-  },
-  "author": "Rizwan",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rizwanwasim/cypress4ccl_js/issues"
-  },
-  "homepage": "https://github.com/rizwanwasim/cypress4ccl_js#readme",
+  "description": "",
   "dependencies": {
-    "cypress": "^12.13.0"
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.12.0",
+    "esbuild": "^0.17.19",
+    "multiple-cucumber-html-reporter": "^3.4.0"
   }
 }
