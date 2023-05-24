@@ -1,0 +1,19 @@
+{
+  "name": "cypress4ccl_js",
+  "version": "1.0.0",
+  "description": "CYpress for CCL in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizwanwasim/cypress4ccl_js.git"
+  },
+  "author": "Rizwan Wasim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizwanwasim/cypress4ccl_js/issues"
+  },
+  "homepage": "https://github.com/rizwanwasim/cypress4ccl_js#readme"
+}
