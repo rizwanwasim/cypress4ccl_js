@@ -13,13 +13,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "A web browser for API Test",
+            "name": "A base Url for API Test",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 10901000000
+              "duration": 11000000
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 131000000
             }
           },
           {
@@ -45,7 +45,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "List user response should have all properties",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
             }
           }
         ],
@@ -56,46 +69,109 @@
         "description": "",
         "id": "api-testing;api-testing-for-single-user",
         "keyword": "Scenario",
-        "line": 12,
+        "line": 13,
         "name": "API Testing for Single User",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
-            "name": "A web browser for API Test",
+            "line": 14,
+            "name": "A base Url for API Test",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 5033000000
+              "duration": 4000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 14,
+            "line": 15,
             "name": "We request the API for Single User",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 449000000
+              "duration": 27000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
+            "line": 16,
             "name": "The response status code should be 200",
             "match": {
               "location": "not available:0"
             },
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "The response should have all user properties",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-testing;api-testing-for-single-user-not-found",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "API Testing for Single User Not Found",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "We request the API for Single User Not Found",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 618000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "The response status code should be 404",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
             }
           }
         ],
@@ -109,5 +185,314 @@
     "name": "API Testing",
     "tags": [],
     "uri": "cypress/e2e/features/apitesting.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing;delete-a-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Delete a user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "We request the API for delete User data",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The response status code should be 204",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing",
+    "tags": [],
+    "uri": "cypress/e2e/features/delete.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing;list-of-all-users",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "List of All users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "We request the Unknown API",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "The response status code should be 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "List unknown user response should have all properties",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing",
+    "tags": [],
+    "uri": "cypress/e2e/features/listusers.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing;create-a-new-user",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Create a new user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "We request the API for Create User",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The response status code should be 201",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The create user response should have all user properties",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing",
+    "tags": [],
+    "uri": "cypress/e2e/features/post.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-testing;update-a-user",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Update a user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "A base Url for API Test",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "We request the API for Update User data",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 403000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "The response status code should be 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The update user response should have all user properties",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-testing",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "API Testing",
+    "tags": [],
+    "uri": "cypress/e2e/features/put.feature"
   }
 ]
