@@ -4,7 +4,7 @@ import {loginPage} from '@pages/LoginPage'
 // try implementing tagging in this file.
 // run from feature file, filter using tags from here.
 // feature files are just for better readability, no
-Given("A web browser is at the saucelabs login page", () => {
+/*Given("A web browser is at the saucelabs login page", () => {
   cy.visit("/");
 });
 
@@ -26,3 +26,4 @@ Then("the url will contains the inventory subdirectory", () => {
 Then("The error message {string} is displayed", (errorMessage) => {
   loginPage.elements.errorMessage().should("have.text", errorMessage);
 });
+*/

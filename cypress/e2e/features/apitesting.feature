@@ -1,9 +1,15 @@
 Feature: API Testing
 
-    Feature Login page will work depending on the user credentials.
+    Feature API Testing.
 
-    Background:
+    # Background:
+    #     Given A web browser for API Test
+    Scenario: API Testing for Page 2
         Given A web browser for API Test
-    Scenario: Success Login
         When We request the API
-        # Then the response code is 200
+        Then The response status code should be 200
+    
+    Scenario: API Testing for Single User
+        Given A web browser for API Test
+        When We request the API for Single User
+        Then The response status code should be 200
