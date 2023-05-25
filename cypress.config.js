@@ -6,7 +6,7 @@ const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin
 
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
-// const allureWriter = require("@shelex/cypress-allure-plugin/writer");
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 
 // async function setupNodeEvents(on, config) {
 //   // This is required for the preprocessor to be able to generate JSON reports after each run, and more,
@@ -33,10 +33,12 @@ module.exports = defineConfig({
       on("file:preprocessor", bundler);
 
       await preprocessor.addCucumberPreprocessorPlugin(on, config);
-  
+      allureWriter (on,config);
       return config;
     },
-  
+    env: {
+      allureReuseAfterSpec: true
+    },
     specPattern: "cypress/e2e/features/*.feature",
     baseUrl: "https://reqres.in",
     chromeWebSecurity: false
