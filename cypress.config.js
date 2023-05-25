@@ -38,7 +38,6 @@ module.exports = defineConfig({
     },
   
     specPattern: "cypress/e2e/features/*.feature",
-    // baseUrl: "https://www.saucedemo.com",
     baseUrl: "https://reqres.in",
     chromeWebSecurity: false
   },

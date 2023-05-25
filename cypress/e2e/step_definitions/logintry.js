@@ -15,7 +15,7 @@ When("We request the Post Login API", () => {
   });
 
 When("We request the Post Login API with Wrong details", () => {
-    cy.request({url:"/api/login", "email": "peter@klaven", failOnStatusCode: false}).as('response');
+    cy.request({url:"/api/login",method:"POST", body: {"email": "peter@klaven"}, failOnStatusCode: false}).as('response');
   });
 
 Then("The response status code should be 400", () => {
@@ -24,5 +24,5 @@ Then("The response status code should be 400", () => {
 
 
 Then("Error message will be shown", () => {
-    cy.get('@response').should("have.property", "error")
+    cy.get('@response').its('body').should("have.property", "error")
   });

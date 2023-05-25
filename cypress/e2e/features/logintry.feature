@@ -11,6 +11,7 @@ Scenario: Login Try
     And Token will be in response
 
 Scenario: Login Try with wrong details
+    Given A base Url for API Test
     When We request the Post Login API with Wrong details
-    # Then The response status code should be 400
+    Then The response status code should be 400
     And Error message will be shown
